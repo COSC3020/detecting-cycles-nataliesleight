@@ -16,6 +16,12 @@ the function and run automatically when you commit through a GitHub action.
 What is the worst-case big $\Theta$ complexity of your implementation? Add your
 answer, including your reasoning, to this markdown file.
 
+Rather than looking through the runtimes of for loops and recurisive calls, I will be looking at what the program does do determine the runtime. The for loop in the first function searches for an unvisited vertex and then starts a DFS search from that node. While this for loop can run up to V times, that would mean that none of the vertices are connected by edges and all are isolated from each other. The runtime in this case would only be V.
+
+When an unvisited vertex is found, it enters a recursive function that explores through the edges of the nodes it finds. The worst case scenario for this case would be the source node has edges connecting to every other node. The recursive call will travel to the first descendent node, then because that node has no descendents, it has to backtrack to the source node to then travel to the next descendant. This would be 2E runtime to make it to the last vertex and back to the source to see that there are no more descendents left to explore. It is 2E because it has to travel each edge twice. It is also traveling each vertex during this so V is added to the runtime. 
+
+The for loop in the first function will travel all isolated graphs as well, making all the edges and vertices traveled in the end. Thus the runtime is $\Theta (|V| + 2|E|)$.
+
 
 ### Sources
 
