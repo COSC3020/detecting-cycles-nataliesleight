@@ -1,6 +1,6 @@
 function hasCycle(graph) {
     var visited = [];
-    var parent = "null";
+    var parent = null;
     for (var i = 0; i < graph.length; i++) {    // check each unvisited node, isolated ones too
         if (!visited.includes(i) && detectCycle(graph, i, visited, parent)) {  // if not visited and has cycle
             return true;
