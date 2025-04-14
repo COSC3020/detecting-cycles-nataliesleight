@@ -15,3 +15,12 @@ the function and run automatically when you commit through a GitHub action.
 
 What is the worst-case big $\Theta$ complexity of your implementation? Add your
 answer, including your reasoning, to this markdown file.
+
+
+### Sources
+
+I used the provided notes slides to deduce the conditions for Kruskal's Algorithm.
+
+I used this link to see how to use DFS (Depth First Search) to search an undirected graph and to detect cycles. I also used the code provided as a template for my own code. I am also using an example graph for my test code: https://yuminlee2.medium.com/detect-cycle-in-a-graph-4461b6000845#10ff
+
+“I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice.” - Natalie Sleight
